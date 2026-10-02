@@ -1,0 +1,3 @@
+# Default for every public Fors-Corp repo without its own FUNDING.yml.
+# The Sponsor button opens the hub route on marcfors.com, which redirects to the Stripe Payment Link.
+custom: ["https://marcfors.com/donate"]
