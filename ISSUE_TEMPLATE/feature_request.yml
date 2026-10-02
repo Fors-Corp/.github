@@ -1,0 +1,31 @@
+name: Feature request
+description: Propose a change to what a project does.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What can you not do today, or what costs more than it should? Describe the situation, not the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should change, and what would it look like to use? Rough is fine.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other ways to solve the problem, including doing nothing, and why they are worse.
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - Small (a few lines, no design change)
+        - Medium (new component, option or command)
+        - Large (changes architecture or public API)

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/Fors-Corp/.github/blob/main/SECURITY.md
+    about: Never in a public issue. Use the repository's Security tab or the contact in the policy.

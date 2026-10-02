@@ -1,0 +1,43 @@
+name: Bug report
+description: Something behaves differently from what the code or docs promise.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Security problems go through the repository's [security policy](../security/policy), never a public issue.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Minimal and in order. Include input data or a link to a reproduction if the steps alone are not enough.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Release version, or the commit SHA if built from source.
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: OS, runtime version (Node, Go, Python, Rust), browser if relevant.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or output
+      render: shell
